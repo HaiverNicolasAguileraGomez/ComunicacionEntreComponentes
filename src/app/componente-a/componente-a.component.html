@@ -1,0 +1,5 @@
+<p>componente-a works!</p>
+<select [ngModel]="opcionSeleccionada" (ngModelChange)="enviarOpcionA($event)">
+    <option value="">Seleccione...</option>
+    <option [ngValue]="opcion" *ngFor="let opcion of opciones">{{opcion.nombre}}</option>
+</select>
